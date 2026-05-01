@@ -34,6 +34,10 @@ body {
   text-decoration: none;
 }
 
+.sidebar a:hover {
+  color: #38bdf8;
+}
+
 /* MAIN */
 .main {
   flex: 1;
@@ -49,21 +53,11 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-input {
-  border: 1px solid #cbd5f5;
-  border-radius: 8px;
-}
-
-button {
-  border-radius: 8px;
-  font-weight: bold;
-}
-
 /* PROFILE */
 .profile-box {
   background: white;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 /* INPUT */
@@ -71,6 +65,8 @@ input {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
+  border: 1px solid #cbd5f5;
+  border-radius: 8px;
 }
 
 /* BUTTON */
@@ -81,17 +77,16 @@ button {
   background: #2563eb;
   color: white;
   border: none;
-}
-
-/* TASK */
-.task {
-  background: #e2e8f0;
-  padding: 10px;
-  margin-top: 10px;
   border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
+button:hover {
+  background: #1d4ed8;
+}
 
+/* TASK CARD */
 .task {
   background: white;
   padding: 15px;
@@ -116,28 +111,11 @@ button {
   font-weight: bold;
 }
 
-.task button {
-  background: #ef4444;
-  margin-top: 10px;
-}
-
-.task-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
+/* DEADLINE */
 .deadline {
   background: #fee2e2;
   color: #dc2626;
   padding: 4px 8px;
   border-radius: 6px;
   font-size: 12px;
-}
-
-.task-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
 }
